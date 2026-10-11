@@ -5,17 +5,17 @@
 */
 window.TDG_CONFIG = {
   // Where every "Apply" button goes (e.g. a Tally, Typeform or Google Form link)
-  applyUrl: "",
+  applyUrl: "https://tally.so/r/nPPajx",
 
   // Newsletter signup page (e.g. Beehiiv, Substack or MailerLite)
-  newsletterUrl: "",
+  newsletterUrl: "https://linktr.ee/thedealgirls",
 
   // Partner enquiries go here. The "Partner with us" button opens an email to this address
   contactEmail: "",
 
   // Social links
-  instagramUrl: "https://www.instagram.com/",
-  linkedinUrl: "https://www.linkedin.com/",
+  instagramUrl: "https://www.instagram.com/thedealgirlsclub/",
+  linkedinUrl: "https://www.linkedin.com/company/the-deal-girls/",
 
   // Ayesha's full story video
   storyVideoUrl: "https://www.instagram.com/reel/DQuC6fZjZUK/",
