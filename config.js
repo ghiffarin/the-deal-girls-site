@@ -11,7 +11,7 @@ window.TDG_CONFIG = {
   newsletterUrl: "https://linktr.ee/thedealgirls",
 
   // Partner enquiries go here. The "Partner with us" button opens an email to this address
-  contactEmail: "",
+  contactEmail: "contact.thedealgirls@gmail.com",
 
   // Social links
   instagramUrl: "https://www.instagram.com/thedealgirlsclub/",
