@@ -24,5 +24,8 @@ window.TDG_CONFIG = {
   // Photo: put the file in assets/img/ and write its name below (e.g. "testimonial-1.jpg"), or leave "".
   testimonials: [
     // { quote: "TDG introduced me to ...", name: "Full Name", role: "Role · City", photo: "testimonial-1.jpg" },
+    { quote: "Being a woman entrepreneur comes with unique challenges that can be hard for people to relate to. That's why finding a community of ambitious women is so important and energizing. Ayesha created such a thoughtful & beautiful space for us to connect. Thank you!", name: "Danna Mulya", role: "Co-Founder & CEO, Podego", photo: "" },
+    { quote: "This is exactly the community I was missing in the Netherlands as a young female founder. Can definitely say this won't be my last event with TDG and excited to stay connected with all of the amazing girls!", name: "Meryem Abayli", role: "Co-Founder, FlowMedia Marketing Agency", photo: "" },
+    { quote: "Ayeshaa I got an older sister figure thanks to TDG brunch!! 😭🤍", name: "Kayla Aurelia", role: "BSc Graduate, University of Groningen", photo: "" },
   ]
 };
