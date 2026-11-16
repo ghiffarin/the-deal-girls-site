@@ -120,9 +120,15 @@
   if (section && grid && list.length) {
     list.forEach(function (t) {
       var fig = document.createElement('figure');
-      fig.className = 'quote';
+      /* Short quotes (under ~90 characters) get the big serif treatment so the note doesn't look empty */
+      fig.className = 'quote' + (t.quote.length < 90 ? ' quote--short' : '');
+      var mark = document.createElement('span');
+      mark.className = 'quote__mark';
+      mark.setAttribute('aria-hidden', 'true');
+      mark.textContent = '“';
+      fig.appendChild(mark);
       var q = document.createElement('blockquote');
-      q.textContent = '“' + t.quote + '”';
+      q.textContent = t.quote;
       var cap = document.createElement('figcaption');
       var ph = document.createElement('span');
       ph.className = 'photo';
