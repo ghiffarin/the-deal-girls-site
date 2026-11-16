@@ -166,9 +166,10 @@ h1,h2,h3,p,figure,blockquote{margin:0}
 /* Testimonials */
 .quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .quote{border:1px solid var(--line);border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:28px;background:#fff}
-.quote blockquote{font-size:22px;line-height:1.35;letter-spacing:-.01em}
+.quote blockquote{font-size:22px;line-height:1.35;letter-spacing:-.01em;flex:1}
 .quote figcaption{display:flex;align-items:center;gap:12px}
-.quote .photo{width:44px;height:44px;border-radius:999px;flex:none}
+.quote .photo{width:44px;height:44px;border-radius:999px;flex:none;background:var(--blush);display:grid;place-items:center}
+.quote__initials{font-family:var(--mono);font-size:13px;font-weight:500;color:var(--coral)}
 .quote b{font-weight:500;display:block}
 .quote small{font-size:14px;color:var(--muted)}
 

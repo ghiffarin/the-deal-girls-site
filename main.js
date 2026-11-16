@@ -126,6 +126,11 @@
       var cap = document.createElement('figcaption');
       var ph = document.createElement('span');
       ph.className = 'photo';
+      ph.setAttribute('aria-hidden', 'true');
+      var ini = document.createElement('span');
+      ini.className = 'quote__initials';
+      ini.textContent = (t.name || '').split(/\s+/).map(function (w) { return w.charAt(0); }).join('').slice(0, 2).toUpperCase();
+      ph.appendChild(ini);
       if (t.photo) {
         var img = document.createElement('img');
         img.src = 'assets/img/' + t.photo; img.alt = ''; img.loading = 'lazy';
