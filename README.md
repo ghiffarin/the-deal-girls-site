@@ -18,3 +18,10 @@ Plain HTML/CSS/JS. No build step. Hosted on Vercel from GitHub.
 - **New link (Apply form, newsletter, email):** edit `config.js` on GitHub → Commit. Live in ~1 minute.
 - **New photo or logo:** upload into `assets/img/` or `assets/logos/` with the exact file name from the folder README → Commit.
 - **Text change:** edit `index.html` on GitHub (pencil icon), find the sentence, change it → Commit.
+
+## Search engines (SEO)
+
+- `robots.txt` lets every search engine crawl the site and points them to `sitemap.xml`.
+- `sitemap.xml` lists every page. **When you add a new page, add its full URL here too**, otherwise Google may not find it.
+- Each page has a `<link rel="canonical">` tag in its `<head>` with its own full URL. Copy that line into any new page and change the URL.
+- The link preview image is `assets/img/og-image.jpg` (1200 × 630). Until that file is uploaded, links shared on LinkedIn or WhatsApp show no image.
