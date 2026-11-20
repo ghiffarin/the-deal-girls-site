@@ -173,7 +173,6 @@ h1,h2,h3,p,figure,blockquote{margin:0}
 .quote:hover{transform:rotate(0) translateY(-4px)}
 .quote__mark{font-family:var(--serif);font-size:76px;line-height:.5;height:26px;color:var(--coral)}
 .quote blockquote{font-size:18px;line-height:1.5;color:var(--ink)}
-.quote--short blockquote{font-family:var(--serif);font-size:30px;line-height:1.15;letter-spacing:-.01em}
 .quote figcaption{display:flex;align-items:center;gap:12px}
 .quote .photo{width:40px;height:40px;border-radius:999px;flex:none;background:var(--blush);display:grid;place-items:center}
 .quote:nth-child(3n+2) .photo{background:#fff}
@@ -300,6 +299,7 @@ h1,h2,h3,p,figure,blockquote{margin:0}
 .bento__card p{font-size:15px;line-height:1.55;color:var(--line)}
 .bento__card a{margin-top:auto;font-weight:500;font-size:15px;min-height:44px;display:inline-flex;align-items:center;text-decoration:none;color:var(--cream)}
 .bento__card a:hover{color:var(--coral-soft)}
+.nowrap{white-space:nowrap}
 .serif{font-family:var(--serif);font-weight:400;letter-spacing:-.02em}
 
 .bento__intro{background:var(--coral);border-color:var(--coral);padding:32px;gap:16px}
@@ -315,7 +315,7 @@ h1,h2,h3,p,figure,blockquote{margin:0}
 .bento__news{background:#1B1717}
 .bento__list{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
 .bento__list li{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--body);padding-top:10px;font-size:14px}
-.bento__list .mono{color:var(--faint)}
+.bento__list .mono{color:var(--faint);white-space:nowrap;flex:none}
 .bento__news a{margin-top:8px}
 
 .bento__stat{background:var(--cream);color:var(--ink);padding:24px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
