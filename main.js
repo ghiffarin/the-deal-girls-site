@@ -120,8 +120,7 @@
   if (section && grid && list.length) {
     list.forEach(function (t) {
       var fig = document.createElement('figure');
-      /* Short quotes (under ~90 characters) get the big serif treatment so the note doesn't look empty */
-      fig.className = 'quote' + (t.quote.length < 90 ? ' quote--short' : '');
+      fig.className = 'quote';
       var mark = document.createElement('span');
       mark.className = 'quote__mark';
       mark.setAttribute('aria-hidden', 'true');
