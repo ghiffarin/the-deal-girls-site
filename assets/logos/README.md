@@ -28,3 +28,4 @@ Only add a logo if you have permission to show it.
 - maudy-ayunda-foundation.svg
 - plus8.svg (traced from the supplied PNG)
 - tuku.svg (traced from the supplied PNG; the original file was cropped at the bottom, so ask TUKU for a full version)
+- finku.svg (traced from the supplied PNG, keeps its four brand colours)
