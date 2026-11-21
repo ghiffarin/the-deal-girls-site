@@ -49,6 +49,7 @@
     instagram: cfg.instagramUrl,
     linkedin: cfg.linkedinUrl,
     story: cfg.storyVideoUrl,
+    events: cfg.eventsUrl,
     contact: cfg.contactEmail ? 'mailto:' + cfg.contactEmail : ''
   };
   document.querySelectorAll('[data-link]').forEach(function (a) {
@@ -58,6 +59,7 @@
     if (/^https?:/.test(url)) { a.target = '_blank'; a.rel = 'noopener'; }
   });
   if (!cfg.newsletterUrl) document.querySelectorAll('[data-needs="newsletter"]').forEach(function (el) { el.hidden = true; });
+  if (!cfg.eventsUrl) document.querySelectorAll('[data-needs="events"]').forEach(function (el) { el.hidden = true; });
 
   /* Mobile menu */
   var header = document.querySelector('.header');
