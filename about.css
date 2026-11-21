@@ -1,0 +1,88 @@
+/* The Deal Girls — About page. Loads after styles.css and reuses its tokens, buttons and section rhythm. */
+
+/* ---------- Hero: headline left, intro right, wide community photo below ---------- */
+.a-hero{border-bottom:1px solid var(--ink)}
+.a-hero__inner{padding-top:96px;padding-bottom:56px;display:flex;flex-direction:column;gap:48px}
+.a-hero__top{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:40px 64px;align-items:end}
+.a-hero__head{display:flex;flex-direction:column;gap:24px}
+.a-hero h1{font-weight:500;font-size:clamp(40px,5vw,76px);line-height:1;letter-spacing:-.035em;margin:0;text-wrap:balance}
+.a-hero h1 .accent{font-size:.95em}
+.a-hero__copy{display:flex;flex-direction:column;gap:18px;font-size:17px;line-height:1.6;color:var(--body);max-width:540px}
+.a-hero__copy .btn{align-self:flex-start;margin-top:8px}
+.a-hero__photo{aspect-ratio:21/9;max-width:100%;border-radius:24px}
+
+/* ---------- 01 Team: one row per person, photo alternating sides ---------- */
+.a-team{display:flex;flex-direction:column;gap:72px}
+.member{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:center}
+.member--flip{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+.member--flip .member__photo{order:2}
+.member__photo{aspect-ratio:4/5;max-width:100%;border-radius:20px}
+.member__photo img{object-position:center 20%}
+.member__body{display:flex;flex-direction:column;gap:20px;max-width:640px}
+.member__meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.member__meta h3{font-weight:500;font-size:30px;letter-spacing:-.02em;margin:0}
+.member__role{border:1px solid var(--ink);border-radius:999px;padding:6px 12px}
+.member__note{color:var(--muted)}
+.member__quote{font-family:var(--serif);font-weight:400;font-size:clamp(26px,2.4vw,36px);line-height:1.15;letter-spacing:-.015em;color:var(--coral);margin:0;text-wrap:balance}
+.member__bio{display:flex;flex-direction:column;gap:14px;font-size:17px;line-height:1.65;color:var(--body)}
+.member__link{text-decoration:none;align-self:flex-start;font-weight:500;font-size:15px;min-height:44px;display:inline-flex;align-items:center;border-bottom:1px solid currentColor}
+.member__link:hover{color:var(--coral)}
+
+/* ---------- 02 What you'll find here: question → answer rows on ink ---------- */
+.a-find{background:var(--ink);color:var(--cream)}
+.a-find .label,.a-find .accent{color:var(--coral-soft)}
+.a-find .section__lead{color:var(--line)}
+.find{display:flex;flex-direction:column}
+.find__row{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:16px 56px;padding:32px 0;border-top:1px solid #4A3E3D}
+.find__row--head{padding:0 0 14px;border-top:0;color:var(--faint)}
+.find__q{font-family:var(--serif);font-weight:400;font-size:clamp(26px,2.4vw,36px);line-height:1.12;letter-spacing:-.015em;margin:0}
+.find__a{font-size:18px;line-height:1.6;color:var(--line);margin:0;max-width:560px;align-self:center}
+
+/* ---------- 03 Timeline ---------- */
+.a-time{background:var(--sand)}
+.tl{list-style:none;margin:0;padding:0;max-width:980px}
+.tl__item{display:grid;grid-template-columns:170px minmax(0,1fr);gap:0 40px}
+.tl__when{color:var(--coral);padding-top:3px}
+.tl__body{position:relative;padding:0 0 44px 36px;border-left:1px solid var(--ink);display:flex;flex-direction:column;gap:6px}
+.tl__body::before{content:"";position:absolute;left:-7px;top:5px;width:13px;height:13px;border-radius:999px;background:var(--coral);box-shadow:0 0 0 4px var(--sand)}
+.tl__item:last-child .tl__body{border-left-color:transparent;padding-bottom:0}
+.tl__body h3{font-weight:500;font-size:21px;letter-spacing:-.01em;margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.tl__body p{font-size:16px;line-height:1.6;color:var(--body);margin:0;max-width:620px}
+/* the milestone that hasn't happened yet: hollow dot, dashed line leading to it */
+.tl__item:has(+ .tl__item--next) .tl__body{border-left-style:dashed}
+.tl__item--next .tl__body::before{background:var(--sand);border:2px solid var(--coral);width:9px;height:9px;left:-7px}
+.tl__item--next .tl__body p{color:var(--muted)}
+.tl__tag{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:400;color:var(--coral);border:1px solid var(--coral);border-radius:999px;padding:3px 10px}
+
+/* ---------- 04 Closing ---------- */
+.a-close h2{font-size:clamp(40px,5.6vw,88px)}
+.a-close__ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+
+/* ---------- Tablet ---------- */
+@media (max-width:1100px){
+  .a-hero__top,.member,.member--flip{grid-template-columns:minmax(0,1fr)}
+  .member{gap:28px}
+  .member--flip .member__photo{order:0}
+  .member__photo{aspect-ratio:4/3;max-height:560px}
+}
+/* ---------- Mobile ---------- */
+@media (max-width:800px){
+  .a-hero__inner{padding-top:48px;padding-bottom:32px;gap:32px}
+  .a-hero__photo{aspect-ratio:4/3;border-radius:16px}
+  .a-team{gap:56px}
+  .member__photo{aspect-ratio:4/5}
+  .member__meta h3{font-size:26px}
+  .member__bio{font-size:16px}
+  .find__row{grid-template-columns:minmax(0,1fr);padding:24px 0}
+  .find__row--head{display:none}
+  .find__a{font-size:16px}
+  .tl__item{grid-template-columns:minmax(0,1fr)}
+  .tl__when{padding:0 0 6px 28px;border-left:1px solid var(--ink)}
+  .tl__item:has(+ .tl__item--next) .tl__when{border-left-style:solid}
+  .tl__body{padding-left:28px}
+  .tl__item:last-child .tl__when{border-left-color:var(--ink);border-left-style:dashed}
+  .tl__item:last-child .tl__body{border-left-color:transparent}
+  .tl__body h3{font-size:19px}
+  .a-close__ctas{flex-direction:column;align-self:stretch}
+  .a-close__ctas .btn{width:100%}
+}

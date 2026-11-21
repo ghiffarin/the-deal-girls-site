@@ -1,6 +1,5 @@
 /* The Deal Girls — Partners page (loads after styles.css) */
 .serif{font-family:var(--serif);font-weight:400;letter-spacing:-.02em}
-.nav__active{color:var(--coral);border-bottom:1px solid var(--coral);padding-bottom:2px}
 .mobile-nav a[aria-current="page"]{color:var(--coral)}
 
 /* Hero */

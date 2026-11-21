@@ -22,6 +22,7 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);f
 img{max-width:100%;display:block}
 a{color:inherit}
 h1,h2,h3,p,figure,blockquote{margin:0}
+[hidden]{display:none!important}
 ::selection{background:var(--coral);color:#fff}
 .partners ::selection{background:var(--ink);color:var(--cream)}
 
@@ -54,6 +55,7 @@ h1,h2,h3,p,figure,blockquote{margin:0}
 .header__bar{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:72px}
 .logo{font-family:var(--serif);font-size:22px;letter-spacing:-.02em;text-decoration:none;color:var(--ink)}
 .logo span{color:var(--coral)}
+.nav__active{color:var(--coral);border-bottom:1px solid var(--coral);padding-bottom:2px}
 .nav{display:flex;gap:32px}
 .nav a{text-decoration:none}
 .nav a:hover{color:var(--coral)}
@@ -111,16 +113,10 @@ h1,h2,h3,p,figure,blockquote{margin:0}
 .cred .accent{font-size:24px}
 .founder__bio{font-size:16px;line-height:1.6;color:var(--body);max-width:560px}
 .founder__act{font-size:28px;line-height:1.25;letter-spacing:-.015em;max-width:600px}
+.founder__more{text-decoration:none;align-self:flex-start;font-weight:500;font-size:15px;min-height:44px;display:inline-flex;align-items:center;border-bottom:1px solid currentColor}
+.founder__more:hover{color:var(--coral)}
 
 /* Story */
-.story{background:var(--blush)}
-.story .section__inner{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:64px}
-.story__side{display:flex;flex-direction:column;gap:20px;align-items:flex-start}
-.story__side a{font-weight:500;font-size:15px;min-height:44px;display:inline-flex;align-items:center}
-.story__side a:hover{color:var(--coral)}
-.story__body{display:flex;flex-direction:column;gap:22px;font-size:18px;line-height:1.65;color:var(--body);max-width:680px}
-.story__pull{font-size:44px;line-height:1.1;letter-spacing:-.02em;color:var(--ink)}
-.story__end{color:var(--ink);font-weight:500}
 
 /* What TDG does */
 .what{background:var(--ink);color:var(--cream);border-bottom:0}
@@ -238,7 +234,7 @@ h1,h2,h3,p,figure,blockquote{margin:0}
 @media (max-width:800px){
   :root{--gutter:20px}
   .header__bar{min-height:64px}
-  .hero,.founder,.story .section__inner,.faq .section__inner{grid-template-columns:minmax(0,1fr)}
+  .hero,.founder,.faq .section__inner{grid-template-columns:minmax(0,1fr)}
   .hero__copy{padding:40px 20px 32px;border-right:0;gap:22px}
   .hero__lead{font-size:16px}
   .hero__ctas{flex-direction:column;align-items:stretch}
@@ -251,9 +247,6 @@ h1,h2,h3,p,figure,blockquote{margin:0}
   .founder__act{font-size:22px}
   .section__inner{padding-top:64px;padding-bottom:64px}
   .section__head{margin-bottom:32px}
-  .story .section__inner{gap:20px}
-  .story__body{font-size:16px}
-  .story__pull{font-size:30px}
   .pillar{padding:24px}
   .pillar h3{font-size:28px}
   .city{grid-template-columns:minmax(0,1fr)}

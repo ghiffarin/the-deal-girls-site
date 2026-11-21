@@ -13,6 +13,9 @@ window.TDG_CONFIG = {
   // Partner enquiries go here. The "Partner with us" button opens an email to this address
   contactEmail: "contact.thedealgirls@gmail.com",
 
+  // Luma page for upcoming events. The "See upcoming events" button on the About page stays hidden until this is set.
+  eventsUrl: "",
+
   // Social links
   instagramUrl: "https://www.instagram.com/thedealgirlsclub/",
   linkedinUrl: "https://www.linkedin.com/company/the-deal-girls/",
