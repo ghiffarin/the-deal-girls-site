@@ -1,6 +1,12 @@
 (function () {
   var cfg = window.TDG_CONFIG || {};
 
+  /* Old links like /about.html or /index.html: show the clean address (/about, /) without reloading. */
+  if (/\.html$/.test(location.pathname) && window.history && history.replaceState) {
+    var clean = location.pathname.replace(/index\.html$/, '').replace(/\.html$/, '');
+    history.replaceState(null, '', clean + location.search + location.hash);
+  }
+
   /* Try a list of file names in order; call done(src) with the first one that loads, or nothing. */
   function firstThatLoads(paths, done) {
     var i = 0;
