@@ -78,9 +78,8 @@
   .find__a{font-size:16px}
   .tl__item{grid-template-columns:minmax(0,1fr)}
   .tl__when{padding:0 0 6px 28px;border-left:1px solid var(--ink)}
-  .tl__item:has(+ .tl__item--next) .tl__when{border-left-style:solid}
   .tl__body{padding-left:28px}
-  .tl__item:last-child .tl__when{border-left-color:var(--ink);border-left-style:dashed}
+  .tl__item--next .tl__when{border-left-style:dashed}
   .tl__item:last-child .tl__body{border-left-color:transparent}
   .tl__body h3{font-size:19px}
   .a-close__ctas{flex-direction:column;align-self:stretch}
